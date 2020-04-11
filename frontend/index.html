@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br>
+    <div class="card p-4 w-50 ml-auto mr-auto">
+      <div class="box">
+        <form>
+        <div class="form-group hed">
+          <label >Расчет стоимости владения автомобилем</label>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Марка</label>
+          <select class="form-control" id="vendor">
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Модель/модификация</label>
+          <select class="form-control" id="mo">
+            <option>Выберите марку</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Комплектация</label>
+          <select class="form-control" id="modify">
+            <option>Выберите марку</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label >Расход топлива, л/100км</label>
+          <input type="text" class="form-control oil" value="11.5" >
+        </div>
+        <!--<div class="form-group">
+          <label >Город</label>
+          <select class="form-control" id="city">
+            <option>Выберите марку</option>
+          </select>
+        </div>-->
+        <div class="form-group">
+          <label >Годовой пробег, км</label>
+          <input type="text" class="form-control mileage" value="12000" >
+        </div>
+        <div class="form-group">
+          <label >Цена топлива, л</label>
+          <input type="text" class="form-control fuel" value="35">
+        </div>
+        <button type="button" class="btn btn-outline-danger calc">Рассчитать</button>
+          <br>
+          <p><b>Топливо: </b> <span class="fuel-total"></span></p>
+          <p><b>ОСАГО: </b> <span class="osago-total"></span></p>
+          <p><b>Транспортный налог: </b> <span class="nalog-total"></span></p>
+        </form>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
